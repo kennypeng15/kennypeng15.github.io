@@ -1,4 +1,21 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://kennypeng15.github.io/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = "something"
 theme = 'hugo-theme-relearn'
+
+[outputs]
+  # add JSON to the home to support Lunr search; This is a mandatory setting
+  # for the search functionality
+  home = ["HTML", "RSS", "SEARCH", "SEARCHPAGE", "JSON"]
+  section = ["HTML", "RSS"]
+  page = ["HTML", "RSS"]
+
+[params]
+    author.name = "Kenny Peng"
+
+    description = "Kenny Peng's Personal Site"
+
+    themeVariant = [
+        { identifier = "custom-dark", name = "Dark"  },
+        { identifier = "custom-light",  name = "Light"}
+    ]
