@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/categories/index.html</loc>
+    <loc>https://kennypeng15.github.io/about/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/index.html</loc>
+    <loc>https://kennypeng15.github.io/categories/index.html</loc>
   </url>
   <url>
-    <loc>https://example.org/tags/index.html</loc>
+    <loc>https://kennypeng15.github.io/contact/index.html</loc>
+  </url>
+  <url>
+    <loc>https://kennypeng15.github.io/index.html</loc>
+  </url>
+  <url>
+    <loc>https://kennypeng15.github.io/projects/minetracker/index.html</loc>
+  </url>
+  <url>
+    <loc>https://kennypeng15.github.io/projects/index.html</loc>
+  </url>
+  <url>
+    <loc>https://kennypeng15.github.io/projects/stpaulbudgetexplorer/index.html</loc>
+  </url>
+  <url>
+    <loc>https://kennypeng15.github.io/tags/index.html</loc>
   </url>
 </urlset>

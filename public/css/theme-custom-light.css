@@ -4,7 +4,7 @@
     --SECONDARY-color: rgba( 47, 129, 235, 1 ); /* brand secondary color */
     --MAIN-LINK-HOVER-color: rgb( 112, 174, 245 ); /* hoverd link color of content */
     --MAIN-BG-color: rgba( 241, 244, 248, 1 ); /* background color of content */
-    --MAIN-font: Segoe UI; /* text font of content and h1 titles */
+    --MAIN-font: BlinkMacSystemFont, "Segoe UI"; /* text font of content and h1 titles */
     --CODE-theme: relearn-dark; /* name of the chroma stylesheet file */
     --CODE-BLOCK-color: rgba( 248, 248, 242, 1 ); /* fallback text color of block code; should be adjusted to your selected chroma style */
     --CODE-BLOCK-BG-color: rgba( 43, 43, 43, 1 ); /* fallback background color of block code; should be adjusted to your selected chroma style */

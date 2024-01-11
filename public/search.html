@@ -8,14 +8,14 @@
     <meta name="description" content="Kenny Peng&#39;s Personal Site">
     <meta name="author" content="Kenny Peng">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Tags">
+    <meta name="twitter:title" content="Search">
     <meta name="twitter:description" content="Kenny Peng&#39;s Personal Site">
-    <meta property="og:title" content="Tags">
+    <meta property="og:title" content="Search">
     <meta property="og:description" content="Kenny Peng&#39;s Personal Site">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://kennypeng15.github.io/tags/index.html">
-    <title>Tags</title>
-    <link href="/tags/index.xml" rel="alternate" type="application/rss+xml" title="Tags"><link rel="icon" href="/images/teddy.png" type="image/png">
+    <meta property="og:url" content="https://kennypeng15.github.io/search.html">
+    <title>Search</title>
+    <link href="https://kennypeng15.github.io/search.html" rel="canonical" type="text/html" title="Search"><link rel="icon" href="/images/teddy.png" type="image/png">
     <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
     <link href="/css/fontawesome-all.min.css?1705006254" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1705006254" rel="stylesheet"></noscript>
     <link href="/css/nucleus.css?1705006254" rel="stylesheet">
@@ -52,7 +52,7 @@
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
   </head>
-  <body class="mobile-support html" data-url="/tags/index.html">
+  <body class="mobile-support searchpage" data-url="/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
       <nav id="R-topbar">
@@ -61,44 +61,42 @@
           <div class="topbar-area topbar-area-start" data-area="start">
             <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide"><button class="topbar-control" onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button>
             </div>
-            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
-              <div class="topbar-content">
-                <div class="topbar-content-wrapper"> 
-                </div>
-              </div>
-            </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">Kenny Peng</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Tags</span><meta itemprop="position" content="2"></li>
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Kenny Peng</span><meta itemprop="position" content="1"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/index.html" title="Kenny Peng (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
             <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><span class="topbar-control"><i class="fa-fw fas fa-chevron-right"></i></span>
             </div>
-            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
-              <div class="topbar-content">
-                <div class="topbar-content-wrapper">
-                  <div class="topbar-area topbar-area-more" data-area="more">
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </nav>
       <div id="R-main-overlay"></div>
-      <main id="R-body-inner" class="highlightable default" tabindex="-1">
+      <main id="R-body-inner" class="highlightable home" tabindex="-1">
         <div class="flex-block-wrapper">
-          <article>
+          <article class="default">
             <header class="headline">
             </header>
-<h1 id="tags">Tags</h1>
+            <h1 id="search">Search</h1>
+
+            <form action="javascript:triggerSearch()">
+              <div class="searchform">
+                <label class="a11y-only" for="R-search-by-detail">Search</label>
+                <input data-search-input id="R-search-by-detail" class="search-by" name="search-by" type="search" placeholder="Search..."><span class="btn cstyle interactive secondary"><button onclick="" type="submit"><i class="fa-fw fas fa-search"></i> <span class="title">Search</span></button></span>
+              </div>
+            </form>
+            <div class="searchhint">
+            </div>
+            <hr>
+            <div id="R-searchresults">
+            </div>
 
             <footer class="footline">
             </footer>
-          </article>        </div>
+          </article>
+        </div>
       </main>
     </div>
     <aside id="R-sidebar" class="default-animation">
