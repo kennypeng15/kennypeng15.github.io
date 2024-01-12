@@ -1,8 +1,9 @@
 ---
 title: MineTracker
 ---
+Check out MineTracker [here!](https://kennypeng15.github.io/minetracker/)
 
-TODO: links to repos. also update the frontend footer / readme to link to here.
+{{< toc >}}
 
 ## Overview and Motivation
 MineTracker is an application for collecting and displaying information about my _minesweeper_ games (played on
@@ -12,7 +13,7 @@ I first started playing minesweeper as an undergraduate in college - the COVID p
 something to keep me occupied! As I played more, I thought it'd be interesting to design a way to gauge 
 if and how I was improving. 
 
-(TODO: link to something with information about minesweeper and stats like 3bv, etc.)
+(`TODO`: link to something with information about minesweeper and stats like 3bv, etc.)
 
 The minesweeper.online platform offers some information towards this regard: for each user, it stores a table
 of successful games (i.e., games where the user won), along with some statistics about those games 
@@ -62,25 +63,26 @@ not necessarily ideal from a design perspective, as will be discussed later).
 MineTracker now resembles a typical 3-tier web application, having a data layer, an API exposing that data layer,
 and a presentation layer.
 
-(TODO design diagram)
+(`TODO`: design diagram)
 
 ### Data Layer
-The data layer of MineTracker consists of two projects: minetracker-lambda and minetracker-publisher.
+The data layer of MineTracker consists of two projects: [minetracker-lambda](https://github.com/kennypeng15/minetracker-lambda) 
+and [minetracker-publisher](https://github.com/kennypeng15/minetracker-publisher).
 
-minetracker-publisher is designed to be run locally; at its core, it is a python application that
-scans through a user's browser (Chrome) history, parses out minesweeper.online games (by looking for entries
-in history that have URLs beginning with minesweeper.online/game/), and sends those games and the times
+[minetracker-publisher](https://github.com/kennypeng15/minetracker-publisher) is designed to be run locally; 
+at its core, it is a python application that scans through a user's browser (Chrome) history, parses out minesweeper.online games 
+(by looking for entries in history that have URLs beginning with minesweeper.online/game/), and sends those games and the times
 they were played at to an SNS endpoint in AWS.
 
-minetracker-lambda is intended to be used as an AWS Lambda function. It is invoked whenever
-a (game URL + timestamp) combination is published to the SNS endpoint that minetracker-publisher writes to.
+[minetracker-lambda](https://github.com/kennypeng15/minetracker-lambda) is intended to be used as an AWS Lambda function. 
+It is invoked whenever a (game URL + timestamp) combination is published to the SNS endpoint that minetracker-publisher writes to.
 minetracker-lambda uses selenium to scrape the game URL provided via SNS, parses out key information about
 the minesweeper game (e.g., if it was a successful game or not, the game time, etc.), and 
 writes that information to a DynamoDB database. 
 Unsolved games without sufficient progress are not written to the database to avoid noise.
 An SQS deadletter queue is configured for any failures.
 
-minetracker-lambda circumvents the issue of IP bans since Lambda environments are ephemeral.
+[minetracker-lambda](https://github.com/kennypeng15/minetracker-lambda) circumvents the issue of IP bans since Lambda environments are ephemeral.
 However, since a custom Lambda image must be used to have selenium, other necessary python libraries,
 as well as a usable Chrome binary, Amazon ECR-Private must be used;
 this, unfortunately, is the only AWS non-always-free service used.
@@ -95,11 +97,11 @@ This is made apparent when working with DynamoDB scans and queries:
 - With DynamoDB, you cannot query for attributes that are not either the partition key or the sort key.
 - The types of queries I want to run on my data, regardless of how I choose (partition key, sort key), would ultimately require querying on non-key attributes.
 - It is thus impossible for me to utilize the more efficient query operation for my use case, and I thus have to use the less efficient and more expensive scan option.
-- These queries would be very simple in SQL. (TODO: example?)
+- These queries would be very simple in SQL. (`TODO`: example?)
 
 ### API Layer
-The API layer of MineTracker consists simply of minetracker-api, 
-a Flask API hosted on pythonanywhere using their free tier.
+The API layer of MineTracker consists simply of [minetracker-api](https://github.com/kennypeng15/minetracker-api), 
+a Flask API hosted on [pythonanywhere](https://www.pythonanywhere.com/) using their free tier.
 
 The API exposes only basic GET endpoints, which return data (which can be filtered with optional query parameters)
 and basic diagnostic information about MineTracker.
@@ -107,13 +109,15 @@ and basic diagnostic information about MineTracker.
 A naive and basic cache is used to circumvent potentially expensive repeated full-DynamoDB scans.
 
 ### Presentation Layer
-The presentation layer of MineTracker consists of a React application, minetracker, hosted on GitHub pages.
+The presentation layer of MineTracker consists of a React application, [minetracker](https://github.com/kennypeng15/minetracker), 
+hosted on [GitHub pages](https://kennypeng15.github.io/minetracker/).
 
 GitHub actions are used to automatically update the application whenever changes to the source
 code are made.
 
 ### Auxiliary Helpers
-I also created a small auxiliary application to assist in migrating old CSV data to DynamoDB, minetracker-migrator.
+I also created a small auxiliary application to assist in migrating old CSV data to DynamoDB, 
+[minetracker-migrator](https://github.com/kennypeng15/minetracker-migrator).
 
 It simply reads in a CSV file, converts column names and filters out extraneous data as necessary, 
 and then writes to DynamoDB.

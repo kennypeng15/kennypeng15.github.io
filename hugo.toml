@@ -1,6 +1,6 @@
 baseURL = 'https://kennypeng15.github.io/'
 languageCode = 'en-us'
-title = ""
+title = "KP"
 theme = 'hugo-theme-relearn'
 
 [outputs]

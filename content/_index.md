@@ -13,4 +13,4 @@ title: Kenny Peng
 ---
 <p align="center">This site is made with Hugo (using the Relearn theme, which is linked in the menu) and deployed on GitHub pages. </p>
 
-<p align="center">The face gracing the left-hand menu bar is my cat Teddy. </p>
+<p align="center">The handsome face on the left-hand menu bar is my cat Teddy. </p>
