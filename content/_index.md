@@ -6,7 +6,7 @@ title: Kenny Peng
 
 <p align="center">I'm Kenny Peng, a software engineer based in San Francisco, California. </p>
 
-<p align="center">Thank you for visiting my site! Feel free to poke around. </p>
+<p align="center">Thank you for visiting my site! Its still a work in progress, but feel free to poke around. </p>
 
 {{< figure src="./me.png" width=350px alt="A picture of me" caption="Here's a picture of me." >}}
 
