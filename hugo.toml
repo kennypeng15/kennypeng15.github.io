@@ -15,3 +15,18 @@ themeVariant = [
   { identifier = "custom-dark", name = "Dark"  },
   { identifier = "custom-light",  name = "Light"}
 ]
+
+# need this to use raw html
+[markup.goldmark.renderer]
+unsafe = true
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-fw fa-github'></i> Source repo"
+identifier = "gh"
+url = "https://github.com/kennypeng15/kennypeng15.github.io"
+weight = 10
+[[menu.shortcuts]]
+name = "<i class='fas fa-fw fa-bullhorn'></i> Theme credit"
+identifier = "rl"
+url = "https://github.com/McShelby/hugo-theme-relearn"
+weight = 20
