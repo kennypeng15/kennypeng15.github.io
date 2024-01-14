@@ -23,7 +23,7 @@ the game board was, etc.). However, I found this information to be lacking in tw
 2. There's no information displayed about games that were not ultimately successful (i.e., games where the user lost).
 
 The second point was particularly important. I've found that the majority of minesweeper games
-I play are not successful, but they still may contain userful information (notably, minesweeper.online
+I play are not successful, but they still may contain useful information (notably, minesweeper.online
 has an additional "estimated time" for unsuccessful games), and thus tracking them could lead to insights.
 
 If minesweeper.online had a table of a user's unsuccessful games 

@@ -15,7 +15,7 @@ Our goal with the Explorer was to showcase and apply what we learned in the cour
 to data that was relevant to us - the publicly available budget data of St. Paul.
 
 To that end, the Explorer offers a variety of views that offer different perspectives and different insights
-into how St. Paul's budget changed over severall years.
+into how St. Paul's budget changed over several years.
 
 Our project was awarded with the "User Achievement" award (i.e., it did the best job at providing users with means to
 "achieve something", or draw insights, from the data) as one of the 3 best submissions in the class.
@@ -32,7 +32,7 @@ the project provides.
 
 ## Visualization Techniques Used
 __Overview first, find and filter, details on demand:__ the initial view provided to users should be broad and give a
-general sense of what's in the dataset. Options should be avaiable to find specific aspects of the data (e.g., how much
+general sense of what's in the dataset. Options should be available to find specific aspects of the data (e.g., how much
 of each year's budget was dedicated to a certain category) and filter data (e.g., just comparing two years). The most
 granular details need not necessarily be included in the visualization itself to prevent clutter, but should
 still be readily available regardless (e.g., as tooltips).
