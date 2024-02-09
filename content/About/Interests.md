@@ -9,7 +9,8 @@ In general, I'm very happy doing application development.
 I have experience with full-stack development as well as developing backend-only applications, I've worked on 
 internal-only and commercial applications, and I've both developed apps from scratch and have improved existing ones.
 
-I'm fond of data analysis and data exploration applications. I've always enjoyed looking through data,
+I'm fond of data analysis and data exploration applications (anything ranging from simple data displays
+to full-on machine learning type problems). I've always enjoyed looking through data,
 graphs, and other visualizations to draw conclusions (hence my Statistics major in undergrad).
 I enjoy building things that contextualize, interpret, and really tell stories with data.
 

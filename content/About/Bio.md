@@ -66,7 +66,10 @@ to the COVID-19 pandemic, this internship was conducted remotely.
 - Devised scoring metrics to gauge how well pull requests adhered to SDLC standards; information could be saved locally or persisted to ElasticSearch for visualization and rollup 
 
 ### Full-Time
-After graduating college, I returned to First Republic as a full-time software engineer.
+After graduating college, I returned to First Republic as a full-time software engineer, starting in September 2022.
+- Part of a development team building a new, backend-only application that utilized Confluent Kafka to enable event-driven architecture
+- App subscribed to a configurable list of Kafka topics, ingested and sanitized events from those topics, and emitted those events to configurable output topics
+- C#, utilizing language-specific features like Microsoft Roslyn for code generation, as well as external libraries like NewRelic for application monitoring
 
 I currently work for JPMorgan Chase.
 
@@ -79,6 +82,7 @@ The programming languages I am most comfortable with, in decreasing order of pro
 - R
 - JavaScript (primarily with React)
 - SQL
+- Kotlin (currently learning)
 
 I'm also familiar with a variety of development or development-adjacent tools, namely:
 - GitHub
