@@ -13,8 +13,6 @@ I first started playing minesweeper as an undergraduate in college - the COVID p
 something to keep me occupied! As I played more, I thought it'd be interesting to design a way to gauge 
 if and how I was improving. 
 
-(`TODO`: link to something with information about minesweeper and stats like 3bv, etc.)
-
 The minesweeper.online platform offers some information towards this regard: for each user, it stores a table
 of successful games (i.e., games where the user won), along with some statistics about those games 
 (e.g., the time it took, how efficient the user was with clicks, a measure of how difficult
@@ -41,6 +39,8 @@ obtaining information about the game regardless of if it was successful or not. 
 persisted to a database, which powers an API, which in turn powers a front-end to display the information
 in a palatable manner.
 
+(as an aside - check out https://minesweeper.online/help/guides for more information on minesweeper and game statistics)
+
 ---
 
 ## Architecture and Design Considerations
@@ -63,7 +63,7 @@ not necessarily ideal from a design perspective, as will be discussed later).
 MineTracker now resembles a typical 3-tier web application, having a data layer, an API exposing that data layer,
 and a presentation layer.
 
-(`TODO`: design diagram)
+![MineTracker's architecture](/images/minetracker-arch.png)
 
 ### Data Layer
 The data layer of MineTracker consists of two projects: [minetracker-lambda](https://github.com/kennypeng15/minetracker-lambda) 
