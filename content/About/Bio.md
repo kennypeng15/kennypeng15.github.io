@@ -37,7 +37,7 @@ president, respectively. As secretary, I managed the organization's inventory, n
 email distribution. 
 As internal vice president, I led more meetings and projects (e.g., to put on events or create content),
 ensured tasks were being completed to meet deadlines, held 1-1s with other board members
-to ensure they had a pleasant tenures, and in general took on a more executive role.
+to ensure they had pleasant tenures, and in general took on a more executive role.
 My senior year, I was an advisor for the board.
 
 ---
