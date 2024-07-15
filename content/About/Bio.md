@@ -43,8 +43,6 @@ My senior year, I was an advisor for the board.
 ---
 
 ## Work Experience
-(more about my work experience and what I did, especially for current positions, will come later)
-
 ### Internships
 In the summer of 2019, I was a software engineering intern at Virtual Radiologic (vRad), a teleradiology
 company in Eden Prairie, MN.
@@ -71,7 +69,12 @@ After graduating college, I returned to First Republic as a full-time software e
 - App subscribed to a configurable list of Kafka topics, ingested and sanitized events from those topics, and emitted those events to configurable output topics
 - C#, utilizing language-specific features like Microsoft Roslyn for code generation, as well as external libraries like NewRelic for application monitoring
 
-I currently work for JPMorgan Chase.
+After First Republic Bank failed and was bought by JPMorgan Chase, I worked for JPMorgan for just over a year,
+from May 2023 to July 2024.
+- Primarily maintained a Kafka message routing application.
+- App provided a configurable and scalable means of ingesting events from Kafka topics and either re-publishing them to other topics, or sending them to API endpoints via HTTP. 
+
+As of July 2024, I'm looking for new opportunities! (please feel free to reach out)
 
 ---
 
@@ -82,7 +85,6 @@ The programming languages I am most comfortable with, in decreasing order of pro
 - R
 - JavaScript (primarily with React)
 - SQL
-- Kotlin (currently learning)
 
 I'm also familiar with a variety of development or development-adjacent tools, namely:
 - GitHub
